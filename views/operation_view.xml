@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="odoo_operation_tree">
+        <field name="name">odoo operations tree</field>
+        <field name="model">odoo.operations</field>
+        <field name="arch" type="xml">
+            <tree>
+
+                <field name="sequence" widget="handle"/>
+
+                <field name="operation_name"/>
+
+
+                <field name="operation"/>
+
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="odoo_operation_form">
+        <field name="name">odoo.operations.form</field>
+        <field name="model">odoo.operations</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="operation_name"/>
+                        <field name="operation"/>
+                        <field name="sequence"/>
+
+
+                        <field name="reference_Record"/>
+
+
+                    </group>
+
+
+                </sheet>
+
+
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_odoo_opearaion" model="ir.actions.act_window">
+        <field name="name">operations</field>
+        <field name="res_model">odoo.operations</field>
+        <field name="context">{}</field>
+        <!--        <field name="target">inline</field>-->
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+
+    <menuitem
+            name="opearation"
+            id="odoo_opearion"
+            action="action_odoo_opearaion"
+            parent="menu_patient_tag_master"
+
+
+    />
+
+</odoo>

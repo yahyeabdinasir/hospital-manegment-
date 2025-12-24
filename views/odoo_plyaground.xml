@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="odoo_playground_form">
+        <field name="name">odoo.playground.form</field>
+        <field name="model">odoo.playground</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+
+<!--                            <field name="code" widget="ace" options="{'mode':'python'}"/>-->
+
+
+                            <field name="model_id"/>
+<!--                              <field name="code" widget="ace" options="{'mode':'python'}"/>-->
+                            <field name="code" />
+
+
+
+                            <field name="result" readonly="1"/>
+
+
+                        </group>
+
+
+                    </group>
+                </sheet>
+                <!--                <footer>-->
+                <!--                    <button name="action_excute" string="excute code" type="object" class="btn-primary"/>-->
+
+                <!--                    <button special="cancel" string="close"/>-->
+                <!--                </footer>-->
+
+
+                <footer>
+                    <button name="action_excute" string="Execute Code" type="object" class="oe_highlight"/>
+                    <button special="cancel" string="Close"/>
+                </footer>
+
+
+                <!--                <footer>-->
+                <!--                    <button special="cancel" data-hotkey="z" string="Oops, no!" class="btn-primary"/>-->
+                <!--                    <button name="install_demo" string="Yes, I understand the risks" type="object" class="btn-secondary" data-hotkey="q"/>-->
+                <!--                </footer>-->
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_odoo_playground" model="ir.actions.act_window">
+        <field name="name">odoo playground</field>
+        <field name="res_model">odoo.playground</field>
+        <field name="context">{}</field>
+        <field name="target">inline</field>
+        <field name="view_mode">tree,form</field>
+
+        <!--        <field name="help" type="html">-->
+        <!--            <p>-->
+        <!--                create playground tests-->
+        <!--            </p>-->
+        <!--        </field>-->
+
+    </record>
+
+
+    <menuitem
+            id="odoo_playground_menu"
+            name="play ground "
+            parent="menu_odoo_playground"
+            action="action_odoo_playground"
+
+
+    />
+
+    <!--        <menuitem id="technical_name" name="technical" sequence="110">-->
+
+    <!--            <menuitem id="menu_playground_1" name="palyground1" sequence="10">-->
+    <!--                <menuitem id="menu_playground_2" name="palyground2" action="action_odoo_playground" sequence="20"/>-->
+
+
+    <!--            </menuitem>-->
+    <!--        </menuitem>-->
+
+</odoo>

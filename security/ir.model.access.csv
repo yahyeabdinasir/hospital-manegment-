@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.hospital.patient,access_hospital_patient,om_hospital.model_hospital_patient,base.group_user,1,1,1,1
+access.hospital.appointment,access_hospital_appointment,om_hospital.model_hospital_appointment,base.group_user,1,1,1,1
+access.hospital.pharmacy,access_hospital_pharmacy,om_hospital.model_hospital_pharmacy,base.group_user,1,1,1,1
+access.hospital.test,access_hospital_test,om_hospital.model_hospital_test,base.group_user,1,1,1,1
+access.odoo.operations,access_odoo_operations,om_hospital.model_odoo_operations,base.group_user,1,1,1,1
+access.hospital.patient_tag,access_hospital_patient_tag,om_hospital.model_hospital_patient_tag,base.group_user,1,1,1,1
+access.odoo.playground,access_odoo_playground,om_hospital.model_odoo_playground,base.group_user,1,1,1,1
+access.cancel.appointment.wizard,access_cancel_appointment_wizard,om_hospital.model_cancel_appointment_wizard,base.group_user,1,1,1,1

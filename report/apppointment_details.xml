@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="appointmetns_reports">
+        <t t-foreach="docs" t-as="o">
+            <t t-call="web.external_layout">
+                <main>
+
+                    <div>
+                        <h2>appointment details</h2>
+                    </div>
+                    <table style="width:260pt; height:120pt;  border:1px solid black ">
+                        <tr>
+                            <td style="width:35%">
+
+                                <table style="width:150pt;height:150">
+                                    <tr style="height:100%">
+                                        <div>
+                                            <tr>
+                                                <td>this is the testing</td>
+                                            </tr>
+                                        </div>
+
+                                    </tr>
+
+
+                                </table>
+                            </td>
+                            <td style="width:70%">
+                                <table class=" container table table-md">
+                                    <thead>
+                                        <tr>
+                                            <th>tbale </th>
+                                            <th>revision</th>
+                                            <th>and </th>
+                                            <th>exploring</th>
+                                        </tr>
+
+                                    </thead>
+
+                                    <tbody>
+                                        <tr style="height:100%">
+
+
+                                            <td style="border:1px solid black">
+                                                hello this is the body td
+                                            </td>
+                                            <td style="border:solid 1px black">
+                                                hello this is the sub body td
+                                            </td>
+
+                                            <td style="border:1px solid black">
+                                                hello this is the body td
+                                            </td>
+                                            <td style="border:solid 1px black">
+                                                hello this is the sub body td
+                                            </td>
+
+
+                                        </tr>
+
+                                    </tbody>
+
+
+                                </table>
+                            </td>
+
+
+                        </tr>
+
+
+                    </table>
+
+
+                </main>
+
+
+            </t>
+
+
+        </t>
+
+
+    </template>
+</odoo>
+
+
